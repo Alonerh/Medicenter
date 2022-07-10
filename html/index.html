@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="/Aleatório/Medicenter/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/Aleatório/Medicenter/css/template.css">
+    <!-- Adiciona icone no Título do site -->
+    <link rel="icon" type="image/x-icon" href="/Aleatório/Medicenter/img/favicon.ico">
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if (document.querySelector(".menu nav ul").style.display == 'flex') {
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            })
+        }
+    </script>
+
+    <title>MediCenter</title>
+</head>
+<body>
+    <!-- O layout é sempre feito de Cima para Baixo | Esquerda para Direita -->
+
+    <!-- Cabeçalho -->
+
+    <header>
+
+        <div class="container">
+            
+            <div class="logo">
+                <a href="index.html"><img src="/Aleatório/Medicenter/img/logo.png" alt=""></a>
+            </div>
+            <div class="menu">
+                <!-- (nav) Informa ao navegador que há um menu aqui | Utiliza-se listas -->
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mm-line"></div>
+                        <div class="mm-line"></div>
+                        <div class="mm-line"> </div>
+                    </div>
+                    <ul>
+                        <!-- li especificado para quando estiver ativo -->
+                        <li class="active"><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">HOME</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Todas as seções fora do Header se chamam (section) -->
+
+    <!-- Section de Banner -->
+    <section id="banner">
+
+        <div class="container column">
+
+            <!--Texto que fica por cima do banner-->
+            <div class="banner-headline">
+                <h1>Top notch experience</h1>
+                <h2>Medicenter is a responsible template perfect for all screen sizes </h2>
+            </div>
+
+            <!--Opções que ficam no banner -->
+            <div class="banner-options">
+                <div class="banner1">
+                    <div class="banner-title">
+                        Emergency Case
+                    </div>
+                    <div class="banner-desc">Algum texto qualquer</div>
+                    <a href="">Read more</button></a>
+                </div>
+
+                <div class="banner2">
+                    <div class="banner-title">
+                        Doctors Timetable
+                    </div>
+                    <div class="banner-desc">Algum texto qualquer</div>
+                    <a href="">Read more</button></a>
+                </div>
+
+                <div class="banner3">
+                    <div class="banner-title">
+                        Opening Hours
+                    </div>
+
+                    <div class="banner-times">
+
+                        <div class="hours-days">
+                            <div class="banner-days1">Monday - Friday</div>
+                            <div class="banner-hours1">8.00 - 17.00</div>
+                        </div>
+
+                        <div class="hours-days">
+                            <div class="banner-days2">Saturday</div>
+                            <div class="banner-hours2">9.30 - 17.30</div>
+                        </div>
+
+                        <div class="hours-days">
+                            <div class="banner-days3">Sunday</div>
+                            <div class="banner-hours3">9.30 - 15.00</div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--Section do Meio-->
+
+    <section id="geral">
+
+        <div class="container">
+            <!--Section se comporta como Div-->
+            <!--Widget são vários áreas de várias partes-->
+            <section>
+                <div class="widget">
+                    <div class="widget-title">
+                        <div class="widget-title-text">Latest News</div>
+                        <div class="widget-title-bar"></div>
+                    </div>
+                    <!--Flex torna todos os elementos flexiveis (deve haver .flex no css)-->
+                    <div class="widget-last-body flex">
+                        
+                        <article>
+                            <a href="">
+                                <div class="news-data">
+                                    <div class="news-posted-at">12 DEC 12</div>
+                                    <div class="news-comments">2</div>
+                                </div>
+                                <div class="news-thumbnail">
+                                    <img src="/Aleatório/Medicenter/img/dr.jpg" alt="dr.jpg">
+                                </div>
+                                <div class="news-title">
+                                    Lorem ipsum dolor sit amat velum
+                                </div>
+                                <div class="news-resume">
+                                    Lorem Ipsum has been the industry's standard dummy text 
+                                    ever since the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into
+                                    electronic typesetting, remaining essentially unchanged.
+                                    
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="news-data">
+                                    <div class="news-posted-at">12 DEC 12</div>
+                                    <div class="news-comments">2</div>
+                                </div>
+                                <div class="news-thumbnail">
+                                    <img src="/Aleatório/Medicenter/img/dr.jpg" alt="dr.jpg">
+                                </div>
+                                <div class="news-title">
+                                    Lorem ipsum dolor sit amat velum
+                                </div>
+                                <div class="news-resume">
+                                    Lorem Ipsum has been the industry's standard dummy text 
+                                    ever since the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into
+                                    electronic typesetting, remaining essentially unchanged.
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="news-data">
+                                    <div class="news-posted-at">12 DEC 12</div>
+                                    <div class="news-comments">2</div>
+                                </div>
+                                <div class="news-thumbnail">
+                                    <img src="/Aleatório/Medicenter/img/dr.jpg" alt="dr.jpg">
+                                </div>
+                                <div class="news-title">
+                                    Lorem ipsum dolor sit amat velum
+                                </div>
+                                <div class="news-resume">
+                                    Lorem Ipsum has been the industry's standard dummy text 
+                                    ever since the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into
+                                    electronic typesetting, remaining essentially unchanged.
+                                </div>
+                            </a>
+                        </article>
+
+                        <article>
+                            <a href="">
+                                <div class="news-data">
+                                    <div class="news-posted-at">12 DEC 12</div>
+                                    <div class="news-comments">2</div>
+                                </div>
+                                <div class="news-thumbnail">
+                                    <img src="/Aleatório/Medicenter/img/dr.jpg" alt="dr.jpg">
+                                </div>
+                                <div class="news-title">
+                                    Lorem ipsum dolor sit amat velum
+                                </div>
+                                <div class="news-resume">
+                                    Lorem Ipsum has been the industry's standard dummy text 
+                                    ever since the 1500s, when an unknown printer took a galley
+                                    of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into
+                                    electronic typesetting, remaining essentially unchanged.
+                                </div>
+                            </a>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+      
+            <!--Campo lateral-->
+            <aside>
+                
+                <div class="widget">
+
+                    <div class="widget-title">
+
+                        <div class="widget-title-text">Departments</div>
+                        <div class="widget-title-bar"></div>
+                    </div>
+
+                    <div class="widget-body-container">
+                        <div class="widget-body1"></div>
+                        <div class="widget-body2"></div>
+                        <div class="widget-body3"></div>
+                        <div class="widget-body4"></div>
+                        <div class="widget-body5"></div>
+                        <div class="widget-body6"></div>
+                    </div>
+
+                </div>
+
+                <div class="widget">
+                    <div class="widget-title">
+                        <div class="widget-title-text">Make a appointment</div>
+                        <div class="widget-title-bar"></div>
+                    </div>
+                    <div class="widget-body-appoint">
+                        <div class="appoint-text">Lorem Ipsum is simply dummy text of the
+                            printing and typesetting industry. </div>
+                        <div class="appoint-container">
+                            <div class="appoint-phone">by phone: <b>1-800-643-4300</b></div>
+                            <div class="appoint-email">by email: <a href="">medicenter@gmail.com</a></div>
+                            <div class="appoint-page">or  <a href="">fill int the form</a> in the contact page.</div>
+                        </div>
+                    </div>
+                </div>
+
+            </aside>
+        </div>
+    </section>
+
+    <!--Parte do Rodapé-->
+    <footer>
+
+        <div class="container flexColumn">
+            <div class="footer-menu">
+                <div class="fm1"><a href=""> <h4 class="fm1-h4">Health Insurance</h4><p class="fm1-desc">Here in medicenter we have individual ➢ </p></a></div>
+                <div class="fm2"><a href=""> <h4 class="fm1-h4">Medical Records</h4><p class="fm1-desc">Here in medicenter we have individual ➢ </p></a></div>
+                <div class="fm3"><a href=""><h4 class="fm1-h4">Online Bill Pay</h4><p class="fm1-desc">Here in medicenter we have individual ➢ </p></a></div>
+            </div>
+            <div class="footer-area">
+                <div class="footer-areaitem">
+                    <div class="widget">
+                        <div class="widget-title">
+                            <div class="widget-title-text">MediCenter Clinic</div>
+                            <div class="widget-title-bar"></div>
+                            <div class="footer-text-clinic1">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                            </div>
+                            <div class="footer-text-clinic-container">
+                                <div class="footer-text-clinic2">Medicenter Clinic</div>
+                                <div class="footer-local-number1">
+                                    <div>33 Farlane Street</div>
+                                    <div>+123 655 655</div>
+                                </div>
+                                <div class="footer-local-number2">
+                                    <div>Keilor East</div>
+                                    <div>+123 755 755</div>
+                                </div>
+                                <div class="footer-local-email">
+                                    <div>VIC 303, Australia</div>
+                                    <div class="footer-email">medicenter@gmail.com</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-areaitem">
+                    <div class="widget">
+                        <div class="widget-title">
+                            <div class="widget-title-text">Latest Posts</div>
+                            <div class="widget-title-bar"></div>
+                        </div>
+                        <div class="latest-container1">
+                            <div class="latest-seta">➢</div>
+                            <div class="latest-text"> Lorem Ipsum is simply dummy text of the printing and typesetting</div>
+                        </div>
+                        <div class="latest-container-time1"></div>
+                            <div class="latest-time">6 years ago</div>
+
+                            <div class="latest-container1">
+                                <div class="latest-seta">➢</div>
+                                <div class="latest-text"> Lorem Ipsum is simply dummy text of the printing and typesetting</div>
+                            </div>
+                            <div class="latest-container-time1"></div>
+                                <div class="latest-time">6 years ago</div>
+
+                        <div class="latest-container1">
+                            <div class="latest-seta">➢</div>
+                            <div class="latest-text"> Lorem Ipsum is simply dummy text of the printing and typesetting</div>
+                        </div>
+                        <div class="latest-container-time1"></div>
+                            <div class="latest-time">6 years ago</div>
+                    </div>
+                </div>
+                <div class="footer-areaitem">
+                    <div class="widget">
+                        <div class="widget-title">
+                            <div class="widget-title-text">Latest Tweets</div>
+                            <div class="widget-title-bar"></div>
+                        </div>
+                            <div class="tweets-container1">
+                                <div class="tweets-seta">➢</div>
+                                <div class="tweets-text">
+                                    We've released new version (v1.2) of our #Clearname #Clearing Company
+                                     #Maid Gardering #WordPress Theme.  Please che... localYYYHMp60
+                                </div>                              
+                            </div>
+                            <div class="tweets-container-time1"></div>
+                                    <div class="latest-time">6 years ago</div>
+
+                            <div class="tweets-container1">
+                                <div class="tweets-seta">➢</div>
+                                <div class="tweets-text">
+                                    We've released new version (v1.2) of our #Clearname #Clearing Company
+                                    #Maid Gardering #WordPress Theme.  Please che... localYYYHMp60
+                                    </div>                              
+                                </div>
+                                <div class="tweets-container-time1"></div>
+                                        <div class="latest-time">6 years ago</div>
+
+                            <div class="tweets-container1">
+                                <div class="tweets-seta">➢</div>
+                                <div class="tweets-text">
+                                    We've released new version (v1.2) of our #Clearname #Clearing Company
+                                    #Maid Gardering #WordPress Theme.  Please che... localYYYHMp60
+                                    </div>                              
+                                </div>
+                                <div class="tweets-container-time1"></div>
+                                        <div class="latest-time">6 years ago</div>
+                                    
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copy">
+                Copyright - Todos os direitos reservados;
+            </div>
+        </div>
+    </footer>  
+    
+</body>
+</html>

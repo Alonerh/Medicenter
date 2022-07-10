@@ -1,0 +1,552 @@
+/*Todos os elementos*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Edição das Header */
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    
+    width: 990px;
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {
+    
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 202px;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 18px;
+}
+
+.mm-line {
+    height: 3px;
+    background-color: #39aae1;
+}
+
+.menu {
+    
+    display: flex;
+    align-items: center;
+
+    
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;   
+}
+
+nav ul li, nav li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #727272;
+}
+
+/* Especificado para quando estiver ativo | Quando passar o mouse por cima */
+nav .active a,
+nav a:hover {
+    background-color: #39aae1;
+    color: #fff;
+}
+
+/* Edição das Sections */
+
+#banner {
+    /*Adicionando a imagem para o site*/
+    background-image: url(/Aleatório/Medicenter/img/img1.jpg);
+    /*Posicionando a imagem*/
+    background-position: center;
+    
+    /* (cover) A imagem se adaptará ao dispositivo que estiver sendo usado */
+    background-size: cover;
+    /*Tamanho da imagem de fundo*/
+    height: 600px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Pega as mesmas propriedas de (container) mas está especificado pelo (.column)*/
+.column {
+    flex-direction: column;
+
+}
+
+/*Esse irá ficar flexivel, seu tamanho se adaptará*/
+.banner-headline {
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.banner-headline h1 {
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555;
+    /*Para ficar perto do h2*/
+    margin: 0;
+    padding: 0;
+    /*Tamanho da área*/
+    max-width: 350px;
+    
+}
+
+.banner-headline h2 {
+    color: #fff;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555;
+    /*Para ficar perto do h1*/
+    margin-top: 30px;
+    padding: 0;
+    /*Tamanho da área*/
+    max-width: 350px;
+    
+}
+
+/*Esse terá um tamanho fixo que moldará o outro*/
+.banner-options {
+    height: 210px;
+    display: flex;
+}
+
+/*Opções do menu | Todos eles*/
+.banner1, .banner2, .banner3 {
+    flex: 1;
+    color: #fff;
+    padding: 20px;
+}
+
+/*Separadamente*/
+.banner1 {
+    background-color: #39aae1;
+}
+.banner2 {
+    background-color: #0079c7;
+}
+.banner3 {
+    background-color: #2b4c99;
+}
+
+.banner-title {
+    font-size: 21px;
+}
+
+.banner-desc {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-options a {
+    /*(display: inline-block;) Acompanha o tamanho do texto*/
+    display: inline-block;
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.hours-days {
+    
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+    margin-bottom: 6px;
+    padding: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-days1 {
+    margin-top: 10px;
+}
+
+.banner-hours1,
+.banner-hours2,
+.banner-hours3 {
+    display: flex;
+    align-items: flex-end;
+}
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget-title-text {
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget-title-bar {
+    background-color: #39aae1;
+    width: 50px;
+    height: 2px;
+    margin-top: 5px;
+}
+
+.widget-body-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.widget-body1,
+.widget-body2,
+.widget-body3,
+.widget-body4,
+.widget-body5,
+.widget-body6 {
+    background-color: #39aae1;
+    width: 140px;
+    height: 140px;
+    margin: 10px;
+    padding: 7px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.appoint-text {
+    margin-bottom: 8px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+}
+
+.appoint-phone,
+.appoint-email,
+.appoint-page {
+    padding: 10px ;
+    padding-left: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.219);
+}
+
+/*Deixa qualquer class flexível*/
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article .news-data {
+    display: flex;
+    
+}
+
+article .news-posted-at {
+    background-color: #2b4c99;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news-comments {
+    background-color: #39aae1;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;   
+}
+
+article .news-thumbnail {
+    margin-top: 30px;
+}
+
+article .news-thumbnail img{
+    width: 100%;
+    height: auto;
+}
+
+article .news-title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000;
+    font-size: 23px;
+}
+
+article .news-resume {
+    color: #5c5c5c;
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+ 
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+footer .fm1-h4 {
+    margin-top: 0;
+    font-weight: lighter;
+}
+
+footer .fm1-desc {
+    font-size: 13px;
+    margin-left: 2px;
+}
+
+.footer-menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+}
+
+.fm1, .fm2, .fm3 {
+    flex: 1;
+    color: #fff;
+}
+.fm1 {
+    background-color: #39aae1;
+}
+.fm2 {
+    background-color: #0079c7;
+}
+.fm3 {
+    background-color: #2b4c99;
+}  
+
+.footer-area {
+    display: flex;
+    color: #fff;
+    
+}
+.footer-areaitem {
+    flex: 1;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+footer .widget-title-text {
+    color: #fff;
+}
+
+.footer-copy {
+    color: #5c5c5c;
+    font-size: 12px;
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    /*Altura da linha*/
+    line-height: 40px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-text-clinic1{
+    color: #666;
+    font-size: 15px;
+    margin: 25px;
+    margin-left: 0; 
+}
+.footer-text-clinic-container {
+    color: #666;
+    font-size: 15px;
+}
+.footer-local-number1, .footer-local-number2 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-top: 2px;
+}
+footer .footer-local-email {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+footer .footer-email {
+    color: #fff;
+    margin-right: 20px;
+}
+
+footer .latest-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 15px;
+    margin-top: 25px;
+}
+footer .latest-seta {
+    font-size: 12px;
+    margin-right: 8px;
+}
+footer .latest-time {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 14px;
+    color: #39aae1;
+}
+
+footer .tweets-container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+footer .tweets-seta {
+    font-size: 12px;
+    margin-right: 8px;
+}
+/*--------------------------------------------------------------------------*/
+/*Responsividade*/
+
+/*Teste a responsividade antes no Inspecionar*/
+
+@media (min-width: 431px) and (max-width: 768px) {
+    .container {
+        justify-content: space-evenly;
+    }
+    .banner-headline {
+        padding-left: 20px;
+    }
+    section .widget {
+        padding-left: 10px;
+    }
+    .widget-body-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 430px) {
+
+    .banner-headline h1 {
+        font-size: 55px;
+    }
+    .banner-headline h2 {
+        font-size: 17px;
+    }
+    .banner-headline {
+        padding: 20px;
+    }
+    .banner-options {
+        height: auto;
+        flex-direction: column;
+    }
+    section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #geral section{
+        margin-top: 150px;
+    }
+
+    #geral aside {
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-right: 20px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .footer-menu {
+        flex-direction: column;
+    }
+    .footer-area {
+        flex-direction: column;
+    }
+    footer .latest-container1 {
+        justify-content: flex-start;
+    }
+    .widget {
+        padding-left: 20px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around
+    }
+    nav ul {
+        padding-inline-start: 0px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+    }
+    @media (max-width: 375px) {
+        .widget-body-container {
+            justify-content: space-between;
+        }
+        .widget-body1, .widget-body2, .widget-body3, .widget-body4, .widget-body5, .widget-body6 {
+            width: 130px;
+            height: 130px;
+        }
+    }
+}
