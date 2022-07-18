@@ -98,7 +98,7 @@ section #banner {
 /*Pega as mesmas propriedas de (container) mas está especificado pelo (.column)*/
 .column {
     flex-direction: column;
-
+    margin: 0 auto;
 }
 
 /*Esse irá ficar flexivel, seu tamanho se adaptará*/
