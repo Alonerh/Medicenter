@@ -79,7 +79,7 @@ nav a:hover {
 
 /* Edição das Sections */
 
-#banner {
+section #banner {
     /*Adicionando a imagem para o site*/
     background-image: url("img/img1.jpg");
     /*Posicionando a imagem*/
