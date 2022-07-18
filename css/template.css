@@ -81,7 +81,7 @@ nav a:hover {
 
 section #banner {
     /*Adicionando a imagem para o site*/
-    background-color: #00f;
+    background-image: url('img/img1.jpg');
     /*Posicionando a imagem*/
     background-position: center;
     
