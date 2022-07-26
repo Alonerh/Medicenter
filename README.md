@@ -6,7 +6,7 @@
 
 <p> Este é um site exemplificativo simples para a área da saúde, projetado unicamente para treinamento de habilidades Front-end </p>
 
-:construction: Projeto sujeito a alteração na sua estrutura :construction:
+:construction: Projeto sujeito à alteração na sua estrutura :construction:
 
 ## :hammer: Funcionalidades do projeto
 
